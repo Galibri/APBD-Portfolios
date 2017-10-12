@@ -1,0 +1,177 @@
+/**
+** stylesheet for main template
+** This css outputs only shortcode user interface
+*/
+
+.apbd-wrapper {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.screen {
+    display: block;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #b3b3b3;
+    border-radius: 1px;
+    margin: 0 auto;
+}
+
+.screen img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: top 5s;
+    -o-transition: top 5s;
+    -webkit-transition: bottom 5s;
+    -o-transition: bottom 5s;
+    transition: bottom 5s;
+}
+
+.screen:hover img {
+    bottom: 0 !important;
+    -webkit-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
+}
+
+
+/*
+** Portfolio elements design
+*/
+
+.apbd-portfolios-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.portfolio-pagination br {
+    display: none;
+}
+
+.apbd-portfolios-details a {
+    font-size: 22px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 12px;
+    display: inline-block;
+}
+
+.screen:hover .apbd-portfolios-details {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*
+**Pagination Design
+*/
+
+.portfolios-pagination {
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolios-pagination a.page-numbers {
+    padding: 8px 12px;
+    margin: 0 2px;
+    background: #ccc;
+    color: #3F51B5;
+}
+
+.portfolios-pagination span.page-numbers.current {
+    background: #3F51B5;
+    padding: 8px 12px;
+    color: #fff;
+    margin: 0 3px;
+}
+
+.apbd-single-portfolios-wrapper {
+    padding: 30px 0;
+}
+
+h2.portfolios-title {
+    font-size: 30px;
+    line-height: 1.3em;
+    font-weight: 600;
+    background: #1c2b4f;
+    color: #fff;
+    padding: 13px 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p.project-single-linkskills,
+p.project-single-type {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+h3.project-des-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+a.apbd-pf-single-link {
+    display: inline-block;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.apbd-single-portfolios-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* PORTFOLIO FILTER STYLE
+----------------------------------------------- */
+
+#portfolio-filter {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+#portfolio-filter li {
+    display: inline;
+    padding-right: 10px;
+}
+
+#portfolio-filter li a {
+    color: #000;
+    padding: 12px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#portfolio-filter li a.current,
+#portfolio-filter li a:hover {
+    color: #fff;
+    background: #000;
+    border-radius: 20px;
+}
